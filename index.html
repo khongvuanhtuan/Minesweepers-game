@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Trò chơi Dò Mìn (Tiếng Việt)</title>
+    <title>Game Dò Mìn</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Giao diện chính -->
     <div class="hopTroChoi">
       <header>
         <h1>💣 Dò Mìn</h1>
@@ -29,6 +28,55 @@
       <div class="khungBang">
         <div class="bang" id="bangChoi" style="--cot: 9"></div>
       </div>
+    </div>
+
+    <!-- Hướng dẫn -->
+    <div class="thongTinBoSung">
+      <section class="huongDan">
+        <h2>📘 Hướng Dẫn Cách Chơi</h2>
+        <ul>
+          <li>Nhấp chuột trái để mở ô.</li>
+          <li>Nhấp chuột phải để đặt hoặc gỡ cờ.</li>
+          <li>
+            Khi đặt số cờ xung quanh 1 ô bằng số trên ô đó, có thể nháy đúp trên
+            ô dó để mờ tất cả những ô xung quanh không cắm cờ mà chưa mở.
+          </li>
+          <li>Bấm 😃 để chơi lại.</li>
+          <li>Chọn độ khó ở menu phía trên.</li>
+          <li>
+            Lưu ý khi chọn chế độ tùy chỉnh:
+            <ul>
+              <li>Số hàng tùy chỉnh: 5-40 </li>
+              <li>Số cột tùy chỉnh: 5-60 </li>
+              <li>Số mìn tối đa: bằng 75% số ô</li>
+              <li>Mặc định (khi bạn không chọn): 16x30 ô, 40 mìn</li>
+          </li>
+        </ul>
+      </section>
+
+      <section class="luatChoi">
+        <h2>Luật Chơi</h2>
+        <ul>
+          <li>
+            Mục tiêu chính của Dò mìn là người chơi phải mở tất cả các ô an toàn
+            trên bàn cờ mà không bấm vào mìn.
+          </li>
+          <li>Trò chơi có 3 thành phần chính:</li>
+          <ul>
+            <li>Mìn: được đặt ngẫu nhiên và ẩn đi.</li>
+            <li>Số: hiển thị từ 1–8 cho biết số mìn trong 8 ô xung quanh.</li>
+            <li>Cờ: để đánh dấu vị trí nghi có mìn.</li>
+          </ul>
+          <li>Các quy tắc của trò chơi</li>
+          <ul>
+            <li>Ô chọn đầu tiên luôn là ô an toàn.</li>
+            <li>Không nhất thiết phải cắm hết cờ.</li>
+            <li>Ô trống (không số) sẽ tự động mở vùng lân cận.</li>
+            <li>Nếu bấm vào một ô có mìn, ván chơi kết thúc với thất bại.</li>
+            <li>Thắng khi mở toàn bộ ô không có mìn.</li>
+          </ul>
+        </ul>
+      </section>
     </div>
 
     <script src="script.js"></script>

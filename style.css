@@ -196,3 +196,46 @@ button:hover {
 .o.mo[data-so="8"] {
   color: #808080;
 }
+
+/* Phần hướng dẫn */
+.thongTinBoSung {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.huongDan,
+.luatChoi {
+  flex: 1;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.huongDan h2,
+.luatChoi h2 {
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.huongDan ul,
+.luatChoi ul {
+  padding-left: 20px;
+}
+
+.huongDan li,
+.luatChoi li {
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+/* Mobile: tự động xếp dọc */
+@media (max-width: 600px) {
+  .thongTinBoSung {
+    flex-direction: column;
+  }
+}
