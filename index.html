@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Trò chơi Dò Mìn (Tiếng Việt)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Giao diện chính -->
+    <div class="hopTroChoi">
+      <header>
+        <h1>💣 Dò Mìn</h1>
+        <select id="mucDo">
+          <option value="de">Dễ (9×9, 10 mìn)</option>
+          <option value="trungBinh">Trung bình (16×16, 40 mìn)</option>
+          <option value="kho">Khó (30×16, 99 mìn)</option>
+          <option value="tuyChinh">Tùy chỉnh</option>
+        </select>
+
+        <button id="nutChoiLai">😃</button>
+
+        <div class="thongTin">
+          <div class="nutHienThi" id="soMinConLai">Mìn: 010</div>
+          <div class="nutHienThi" id="boDemThoiGian">0s</div>
+        </div>
+      </header>
+
+      <div class="khungBang">
+        <div class="bang" id="bangChoi" style="--cot: 9"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
